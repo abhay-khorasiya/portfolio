@@ -4,365 +4,811 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Abhay Khorasiya | Portfolio</title>
-    
-    <link rel="stylesheet" href="/style.css">
 
+    <title>Abhay Khorasiya | Full Stack Developer</title>
+
+    <meta name="description"
+        content="Portfolio of Abhay Khorasiya - Full Stack Developer, Python Developer & AI Enthusiast">
+
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- Icons -->
     <link rel="stylesheet"
-        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+        href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
 
-    <!-- Header -->
-    <header class="header">
+    <!--================ Loader ================-->
+
+    <div id="loader">
+
+        <div class="loader-logo">
+
+            <span>A</span>
+
+        </div>
+
+    </div>
+
+    <!--================ Cursor ================-->
+
+    <div class="cursor"></div>
+
+    <div class="cursor-blur"></div>
+
+    <!--================ Background ================-->
+
+    <div class="bg-animation">
+
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+
+    </div>
+
+    <!--================ Header ================-->
+
+    <header>
 
         <div class="container">
 
-            <div class="logo">
-                Abhay Khorasiya
-            </div>
+            <a href="#" class="logo">
 
-            <nav class="navbar">
+                Abhay<span>.</span>
+
+            </a>
+
+            <nav>
+
                 <a href="#home">Home</a>
+
                 <a href="#about">About</a>
+
                 <a href="#skills">Skills</a>
+
                 <a href="#projects">Projects</a>
-                <a href="#experience">Experience</a>
-                <a href="#certifications">Certificates</a>
+
                 <a href="#contact">Contact</a>
+
             </nav>
+
+            <div class="menu-btn">
+
+                <i class="fa-solid fa-bars"></i>
+
+            </div>
 
         </div>
 
     </header>
 
-    <!-- Hero Section -->
-    <section class="hero" id="home">
+    <!--================ Hero ================-->
 
-        <div class="hero-text">
+    <section id="home" class="hero">
 
-            <span class="hero-tag">
-                Full Stack Developer
-            </span>
+        <div class="container hero-container">
 
-            <h1>
-                Hi, I'm Abhay Khorasiya
-            </h1>
+            <div class="hero-content">
 
-            <h2>
-                Python Developer | Flask Developer | AI Enthusiast
-            </h2>
+                <span class="subtitle">
 
-            <p>
-                Passionate developer focused on building web applications,
-                AI-powered solutions, and modern software systems.
-                I enjoy learning new technologies and creating real-world projects.
-            </p>
+                    👋 Hello, I'm
 
-            <div class="hero-buttons">
+                </span>
 
-                <a href="/resume.pdf"
-                    target="_blank"
-                    class="btn">
-                    View Resume
-                </a>
+                <h1>
 
-                <a href="https://github.com/abhay-khorasiya"
-                    target="_blank"
-                    class="btn-outline">
-                    GitHub
-                </a>
+                    Abhay
+                    <br>
+                    <span>Khorasiya</span>
 
-            </div>
+                </h1>
 
-            <div class="social-icons">
-
-                <a href="https://github.com/abhay-khorasiya"
-                    target="_blank">
-                    <i class="fab fa-github"></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/abhay-khorasiya-a18220302"
-                    target="_blank">
-                    <i class="fab fa-linkedin"></i>
-                </a>
-
-                <a href="mailto:abhaykhorasiya316@gmail.com">
-                    <i class="fas fa-envelope"></i>
-                </a>
-
-            </div>
-
-        </div>
-
-        <div class="hero-image">
-
-            <img src="/profile.jpeg"
-                alt="Abhay Khorasiya">
-
-        </div>
-
-    </section>
-
-    <!-- About -->
-    <section id="about">
-
-        <div class="container">
-
-            <h2 class="section-title">
-                About Me
-            </h2>
-
-            <p class="about-text">
-
-                I am a BCA student with strong interest in Full Stack
-                Development, Python Programming, Artificial Intelligence,
-                Machine Learning, and Software Engineering.
-
-                I have developed multiple projects including AI Resume Analyzer,
-                Auto Reply Chatbot,AI Assistant, and User Management Systems.
-
-            </p>
-
-        </div>
-
-    </section>
-
-    <!-- Skills -->
-    <section id="skills">
-
-        <div class="container">
-
-            <h2 class="section-title">
-                Technical Skills
-            </h2>
-
-            <div class="skills-grid">
-
-                <div class="skill-card">Python</div>
-                <div class="skill-card">Numpy</div>
-                <div class="skill-card">Pandas</div>
-                <div class="skill-card">Flask</div>
-                <div class="skill-card">Django</div>
-                <div class="skill-card">PHP</div>
-                <div class="skill-card">Java</div>
-                <div class="skill-card">MySQL</div>
-                <div class="skill-card">HTML</div>
-                <div class="skill-card">CSS</div>
-                <div class="skill-card">JavaScript</div>
-                <div class="skill-card">Git</div>
-                <div class="skill-card">GitHub</div>
-                <div class="skill-card">AI / ML</div>
-              
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Projects -->
-    <section id="projects">
-
-        <div class="container">
-
-            <h2 class="section-title">
-                 Projects
-            </h2>
-
-            <div class="project-grid">
-
-                <div class="project-card">
-                    <h3>AI Resume Analyzer</h3>
-                    <p>
-                        AI-powered resume analysis system that evaluates
-                        resumes and suggests improvements.
-                    </p>
-                </div>
-
-                <div class="project-card">
-                    <h3>User Management System</h3>
-                    <p>
-                        Secure user authentication and management platform.
-                    </p>
-                </div>
-
-                <div class="project-card">
-                    <h3>Auto Reply Chatbot</h3>
-                    <p>
-                        AI chatbot that automatically generates smart replies.
-                    </p>
-                </div>
-
-                <div class="project-card">
-                    <h3> AI Assistant</h3>
-                    <p>
-                        Voice-controlled AI assistant with automation features.
-                    </p>
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Experience -->
-    <section id="experience">
-
-        <div class="container">
-
-            <h2 class="section-title">
-                Experience
-            </h2>
-
-            <div class="experience-card">
-
-                <h3>PHP Intern</h3>
-
-                <!-- <span>Triple One Studio</span> -->
+                <h2 id="typing"></h2>
 
                 <p>
-                   Completed internship in the Web Development Department.
-                    Gained hands-on experience in web application development and real-world software development
-                    workflows.
-                    Worked under the guidance of the Project Manager, contributing to practical development tasks and
-                    project-based activities.
-                    Applied academic knowledge to industry projects while enhancing problem-solving, teamwork, and
-                    communication skills.
-                    Developed an understanding of professional work culture, software development practices, and
-                    collaborative project execution.
+
+                    Passionate Full Stack Developer focused on creating
+                    beautiful web experiences, AI applications,
+                    automation tools and modern user interfaces.
 
                 </p>
 
-            </div>
+                <div class="hero-buttons">
 
-        </div>
-
-    </section>
-
-    <!-- Certificates -->
-    <section id="certifications">
-
-        <div class="container">
-
-            <h2 class="section-title">
-                Certificates
-            </h2>
-
-            <div class="certificate-grid">
-
-                <div class="certificate-card">
-
-                    <div class="certificate-icon">🏆</div>
-
-                    <h3>Software Engineer Intern</h3>
-
-                    <p>HackerRank Certification</p>
-
-                    <a href="/software-engineer.pdf"
-                        target="_blank"
-                        class="certificate-btn">
-                        View Certificate
-                    </a>
-
-                </div>
-
-                <div class="certificate-card">
-
-                    <div class="certificate-icon">📊</div>
-
-                    <h3>SQL (Advanced)</h3>
-
-                    <p>HackerRank Certification</p>
-
-                    <a href="/sql-certificate.pdf"
-                        target="_blank"
-                        class="certificate-btn">
-                        View Certificate
-                    </a>
-
-                </div>
-
-                <div class="certificate-card">
-
-                    <div class="certificate-icon">💼</div>
-
-                    <h3>Web Development Internship</h3>
-
-                    <p>Triple One Studio</p>
-
-                    <a href="/internship.pdf"
-                        target="_blank"
-                        class="certificate-btn">
-                        View Certificate
-                    </a>
-
-                </div>
-
-            </div>
-
-        </div>
-
-    </section>
-
-    <!-- Contact -->
-    <section id="contact">
-
-        <div class="container">
-
-            <h2 class="section-title">
-                Contact Me
-            </h2>
-
-            <div class="contact-box">
-
-                <div class="contact-item">
-                    <i class="fas fa-envelope"></i>
-                    <span>abhaykhorasiya316@gmail.com</span>
-                </div>
-
-                <div class="contact-item">
-                    <i class="fas fa-phone"></i>
-                    <span>+91 7984704079</span>
-                </div>
-
-                <div class="contact-item">
-                    <i class="fas fa-location-dot"></i>
-                    <span>India</span>
-                </div>
-
-                <div class="contact-item">
-                    <i class="fab fa-linkedin"></i>
-                    <a href="https://www.linkedin.com/in/abhay-khorasiya-a18220302"
+                    <a href="assets/resume.pdf"
+                        class="btn"
                         target="_blank">
-                        LinkedIn Profile
+
+                        Download Resume
+
                     </a>
+
+                    <a href="#projects"
+                        class="btn-outline">
+
+                        View Projects
+
+                    </a>
+
                 </div>
 
-                <div class="contact-item">
-                    <i class="fab fa-github"></i>
+                <div class="social-links">
+
                     <a href="https://github.com/abhay-khorasiya"
                         target="_blank">
-                        GitHub Profile
+
+                        <i class="fab fa-github"></i>
+
                     </a>
+
+                    <a href="https://www.linkedin.com/in/abhay-khorasiya-a18220302"
+                        target="_blank">
+
+                        <i class="fab fa-linkedin"></i>
+
+                    </a>
+
+                    <a href="mailto:abhaykhorasiya316@gmail.com">
+
+                        <i class="fa-solid fa-envelope"></i>
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-image">
+
+                <div class="circle"></div>
+
+                <img src="images/profile.jpeg"
+                    alt="Abhay Khorasiya">
+
+            </div>
+
+        </div>
+
+        <div class="scroll-indicator">
+
+            <span></span>
+
+        </div>
+
+    </section>
+    <!--================ ABOUT =================-->
+
+<section id="about" class="about">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>ABOUT ME</span>
+
+            <h2>Who Am I?</h2>
+
+        </div>
+
+        <div class="about-container">
+
+            <div class="about-image">
+
+                <div class="image-card">
+
+                    <img src="images/profile.jpeg" alt="Abhay">
+
+                </div>
+
+            </div>
+
+            <div class="about-content">
+
+                <h3>Full Stack Developer & AI Enthusiast</h3>
+
+                <p>
+
+                    I'm <strong>Abhay Khorasiya</strong>, a passionate Full Stack Developer
+                    who enjoys building modern websites, AI-powered applications,
+                    automation tools and interactive user experiences.
+
+                </p>
+
+                <p>
+
+                    I love learning new technologies and turning ideas into
+                    beautiful digital products.
+
+                </p>
+
+                <div class="about-info">
+
+                    <div class="info-box">
+
+                        <h4>Name</h4>
+
+                        <span>Abhay Khorasiya</span>
+
+                    </div>
+
+                    <div class="info-box">
+
+                        <h4>Email</h4>
+
+                        <span>abhaykhorasiya316@gmail.com</span>
+
+                    </div>
+
+                    <div class="info-box">
+
+                        <h4>Location</h4>
+
+                        <span>Gujarat, India</span>
+
+                    </div>
+
+                    <div class="info-box">
+
+                        <h4>Experience</h4>
+
+                        <span>Full Stack Developer</span>
+
+                    </div>
+
                 </div>
 
             </div>
 
         </div>
 
-    </section>
+    </div>
 
-    <footer>
+</section>
+
+<!--================ STATS =================-->
+
+<section class="stats">
+
+    <div class="container stats-container">
+
+        <div class="stat-card">
+
+            <h2>10+</h2>
+
+            <p>Projects Completed</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>15+</h2>
+
+            <p>Technologies</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>3+</h2>
+
+            <p>Certificates</p>
+
+        </div>
+
+        <div class="stat-card">
+
+            <h2>100%</h2>
+
+            <p>Dedication</p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ SKILLS =================-->
+
+<section id="skills" class="skills">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>MY SKILLS</span>
+
+            <h2>Technology Stack</h2>
+
+        </div>
+
+        <div class="skills-grid">
+
+            <div class="skill-card">
+                <i class="fab fa-html5"></i>
+                <h3>HTML5</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-css3-alt"></i>
+                <h3>CSS3</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-js"></i>
+                <h3>JavaScript</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-python"></i>
+                <h3>Python</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-react"></i>
+                <h3>React</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fas fa-database"></i>
+                <h3>MySQL</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-git-alt"></i>
+                <h3>Git</h3>
+            </div>
+
+            <div class="skill-card">
+                <i class="fab fa-github"></i>
+                <h3>GitHub</h3>
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--================ PROJECTS =================-->
+
+<section id="projects" class="projects">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>PORTFOLIO</span>
+
+            <h2>Featured Projects</h2>
+
+        </div>
+
+        <div class="projects-grid">
+
+            <div class="project-card">
+
+                <div class="project-image">
+                    <img src="images/project1.jpg" alt="Restaurant Website">
+                </div>
+
+                <div class="project-content">
+
+                    <span>HTML • CSS • JavaScript</span>
+
+                    <h3>Restaurant Website</h3>
+
+                    <p>
+                        Modern responsive restaurant website with smooth
+                        animations, beautiful UI, interactive menu,
+                        reservation section and gallery.
+                    </p>
+
+                    <div class="project-buttons">
+
+                        <a href="#" class="btn-small">
+                            Live Demo
+                        </a>
+
+                        <a href="#" class="btn-small-outline">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
+                <div class="project-image">
+                    <img src="images/project2.jpg" alt="Portfolio">
+                </div>
+
+                <div class="project-content">
+
+                    <span>HTML • CSS • JavaScript</span>
+
+                    <h3>Animated Portfolio</h3>
+
+                    <p>
+                        Premium developer portfolio with GSAP animations,
+                        glassmorphism UI, smooth scrolling,
+                        and interactive components.
+                    </p>
+
+                    <div class="project-buttons">
+
+                        <a href="#" class="btn-small">
+                            Live Demo
+                        </a>
+
+                        <a href="#" class="btn-small-outline">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="project-card">
+
+                <div class="project-image">
+                    <img src="images/project3.jpg" alt="AI Project">
+                </div>
+
+                <div class="project-content">
+
+                    <span>Python • Flask • AI</span>
+
+                    <h3>AI Assistant</h3>
+
+                    <p>
+                        Intelligent AI assistant capable of answering
+                        questions, automating tasks,
+                        and helping users efficiently.
+                    </p>
+
+                    <div class="project-buttons">
+
+                        <a href="#" class="btn-small">
+                            Live Demo
+                        </a>
+
+                        <a href="#" class="btn-small-outline">
+                            GitHub
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ EXPERIENCE =================-->
+
+<section class="experience">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>EXPERIENCE</span>
+
+            <h2>Professional Journey</h2>
+
+        </div>
+
+        <div class="timeline">
+
+            <div class="timeline-item">
+
+                <div class="timeline-dot"></div>
+
+                <div class="timeline-content">
+
+                    <span>2026</span>
+
+                    <h3>PHP Developer Intern</h3>
+
+                    <h4>Triple One Studio</h4>
+
+                    <p>
+
+                        Worked on real-world PHP and MySQL applications,
+                        fixed bugs, developed modules,
+                        and collaborated with senior developers.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ EDUCATION =================-->
+
+<section class="education">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>EDUCATION</span>
+
+            <h2>Academic Journey</h2>
+
+        </div>
+
+        <div class="education-card">
+
+            <h3>Bachelor of Computer Applications (BCA)</h3>
+
+            <span>2023 – 2026</span>
+
+            <p>
+
+                Focused on programming, databases,
+                software engineering, networking,
+                web development and artificial intelligence.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ CERTIFICATES =================-->
+
+<section class="certificates">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>CERTIFICATES</span>
+
+            <h2>Achievements</h2>
+
+        </div>
+
+        <div class="certificate-grid">
+
+            <div class="certificate-card">
+
+                <i class="fa-solid fa-award"></i>
+
+                <h3>Software Engineer</h3>
+
+                <p>HackerRank</p>
+
+                <a href="certificates/software-engineer.pdf"
+                   target="_blank"
+                   class="btn-small">
+
+                    View
+
+                </a>
+
+            </div>
+
+            <div class="certificate-card">
+
+                <i class="fa-solid fa-database"></i>
+
+                <h3>SQL Advanced</h3>
+
+                <p>HackerRank</p>
+
+                <a href="certificates/sql-certificate.pdf"
+                   target="_blank"
+                   class="btn-small">
+
+                    View
+
+                </a>
+
+            </div>
+
+            <div class="certificate-card">
+
+                <i class="fa-solid fa-graduation-cap"></i>
+
+                <h3>Internship Certificate</h3>
+
+                <p>Triple One Studio</p>
+
+                <a href="certificates/internship.pdf"
+                   target="_blank"
+                   class="btn-small">
+
+                    View
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+<!--================ CONTACT =================-->
+
+<section id="contact" class="contact">
+
+    <div class="container">
+
+        <div class="section-title">
+
+            <span>CONTACT</span>
+
+            <h2>Let's Work Together</h2>
+
+            <p>
+                I'm always open to discussing new opportunities,
+                freelance work, collaborations, or innovative ideas.
+            </p>
+
+        </div>
+
+        <div class="contact-container">
+
+            <div class="contact-info">
+
+                <div class="contact-box">
+
+                    <i class="fas fa-envelope"></i>
+
+                    <div>
+
+                        <h3>Email</h3>
+
+                        <span>abhaykhorasiya316@gmail.com</span>
+
+                    </div>
+
+                </div>
+
+                <div class="contact-box">
+
+                    <i class="fas fa-phone"></i>
+
+                    <div>
+
+                        <h3>Phone</h3>
+
+                        <span>+91 7984704079</span>
+
+                    </div>
+
+                </div>
+
+                <div class="contact-box">
+
+                    <i class="fas fa-location-dot"></i>
+
+                    <div>
+
+                        <h3>Location</h3>
+
+                        <span>India</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <form class="contact-form">
+
+                <input type="text" placeholder="Your Name" required>
+
+                <input type="email" placeholder="Your Email" required>
+
+                <input type="text" placeholder="Subject">
+
+                <textarea rows="6" placeholder="Your Message"></textarea>
+
+                <button type="submit" class="btn">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--================ FOOTER =================-->
+
+<footer>
+
+    <div class="container">
+
+        <a href="#" class="footer-logo">
+
+            Abhay<span>.</span>
+
+        </a>
 
         <p>
-            © 2026 Abhay Khorasiya | Full Stack Developer
+
+            Full Stack Developer • Python Developer • AI Enthusiast
+
         </p>
 
-    </footer>
+        <div class="footer-social">
 
-    <script src="/script.js"></script>
+            <a href="https://github.com/abhay-khorasiya" target="_blank">
+
+                <i class="fab fa-github"></i>
+
+            </a>
+
+            <a href="https://www.linkedin.com/in/abhay-khorasiya-a18220302" target="_blank">
+
+                <i class="fab fa-linkedin"></i>
+
+            </a>
+
+            <a href="mailto:abhaykhorasiya316@gmail.com">
+
+                <i class="fas fa-envelope"></i>
+
+            </a>
+
+        </div>
+
+        <p class="copyright">
+
+            © 2026 Abhay Khorasiya. All Rights Reserved.
+
+        </p>
+
+    </div>
+
+</footer>
+
+<!--================ JAVASCRIPT LIBRARIES =================-->
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/gsap.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.13.0/ScrollTrigger.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/@studio-freight/lenis@1.0.42/bundled/lenis.min.js"></script>
+
+<script src="https://cdn.jsdelivr.net/npm/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+<!--================ MAIN JS =================-->
+
+<script src="js/script.js"></script>
 
 </body>
 
